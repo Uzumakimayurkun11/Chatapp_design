@@ -20,7 +20,7 @@ const screenList = document.querySelector("#screenList");
 const galleryGrid = document.querySelector("#galleryGrid");
 const screenSearch = document.querySelector("#screenSearch");
 const image = document.querySelector("#screenImage");
-let current = 0;
+let current = 3;
 
 function selectScreen(index, options = {}) {
   current = (index + screens.length) % screens.length;
