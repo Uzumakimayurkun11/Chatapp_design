@@ -1,32 +1,20 @@
-# ChatApp — Modern Team Communication Interface
+# ChatApp — Team communication, made human
 
-A sleek, minimalist team communication and chat application interface designed in Figma, focusing on streamlined workspace navigation and a distraction-free messaging experience.
+Explore the ChatApp mobile concept through a responsive, clickable screen browser. Move between the welcome flow, direct and team conversations, workspace tools, calls, files, and settings.
 
----
+**[Open the live demo](https://uzumakimayurkun11.github.io/Chatapp_design/)** · [View the repository](https://github.com/Uzumakimayurkun11/Chatapp_design)
 
-## 🚀 Overview
-ChatApp is a UI/UX concept built to reduce cognitive overload during daily team interactions. It combines structured sidebar navigation with a high-contrast, readable chat canvas to optimize productivity for remote and hybrid teams.
+## What’s inside
 
----
+- Interactive preview of all 15 designed app screens
+- Searchable screen navigation, previous and next controls, and full-size previews
+- Responsive layout for desktop and mobile browsers
+- Original Figma screen exports displayed inside a mobile device frame
 
-## 📱 Live Preview
+## Built with
 
-### Mobile Chat Interface
-<p align="center">
-  <img src="05 · Chat.png" alt="Mobile Chat Interface" width="500"/>
-</p>
+HTML, CSS, and JavaScript. The prototype runs without a framework or external service.
 
----
+## Design
 
-## ✨ Key Features
-* **Streamlined Workspace Navigation:** Clear separation of direct messages, team channels, and pinned projects.
-* **Distraction-Free Messaging:** Prioritizes message hierarchy, clean typography, and intuitive thread replies.
-* **Modern Design System:** Uses soft container radii, balanced spacing, and subtle interactive states.
-* **Responsive Layouts:** Designed with scalability across viewing experiences.
-
-## 🛠️ Design Toolchain
-* **Figma:** Wireframing, high-fidelity UI prototyping, and component design.
-* **Webflow:** Responsive layout translation and structure planning.
-
-## 👤 Author
-* **Chiraag Mayur**
+Created in Figma by Chiraag Mayur.

@@ -1,150 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatApp — Modern Team Communication Interface</title>
-    <style>
-        :root {
-            --bg-color: #0b0f19;
-            --card-bg: #111827;
-            --border-color: rgba(255, 255, 255, 0.08);
-            --text-primary: #f9fafb;
-            --text-secondary: #9ca3af;
-            --accent: #3b82f6;
-            --accent-hover: #2563eb;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            line-height: 1.6;
-            padding: 60px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .container {
-            max-width: 900px;
-            width: 100%;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        h1 {
-            font-size: 2.75rem;
-            font-weight: 700;
-            margin-bottom: 16px;
-            letter-spacing: -0.025em;
-        }
-
-        .subtitle {
-            color: var(--text-secondary);
-            font-size: 1.15rem;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .hero-preview {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 20px;
-            padding: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 50px;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
-        }
-
-        .hero-preview img {
-            max-width: 340px;
-            width: 100%;
-            border-radius: 14px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 24px;
-            margin-bottom: 50px;
-        }
-
-        .feature-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 14px;
-            padding: 28px;
-            transition: transform 0.2s ease, border-color 0.2s ease;
-        }
-
-        .feature-card:hover {
-            border-color: rgba(59, 130, 246, 0.4);
-            transform: translateY(-2px);
-        }
-
-        .feature-card h3 {
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-            color: var(--text-primary);
-        }
-
-        .feature-card p {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
-
-        footer {
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            border-top: 1px solid var(--border-color);
-            padding-top: 30px;
-            margin-top: 30px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fc">
+  <meta name="description" content="Explore the ChatApp team messaging prototype: browse conversations, teams, calls, files, and workspace settings.">
+  <title>ChatApp — A clearer way to stay close</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>ChatApp</h1>
-            <p class="subtitle">A sleek, minimalist team communication and chat application interface designed in Figma, focusing on streamlined workspace navigation and a distraction-free messaging experience.</p>
-        </header>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="ChatApp home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>chat<span class="brand-accent">app</span></span></a>
+    <nav class="top-links" aria-label="Main navigation">
+      <a href="#prototype">Prototype</a>
+      <a href="#screens">Screens</a>
+      <a href="https://github.com/Uzumakimayurkun11/Chatapp_design" target="_blank" rel="noreferrer">Source <span aria-hidden="true">↗</span></a>
+    </nav>
+    <a class="top-cta" href="#prototype">Explore the app <span aria-hidden="true">↗</span></a>
+  </header>
 
-        <section class="hero-preview">
-            <img src="05 · Chat.png" alt="Mobile Chat Interface">
-        </section>
+  <main id="top">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="eyebrow"><span class="pulse"></span> TEAM MESSAGING, MADE HUMAN</div>
+      <h1 id="page-title">A clearer way<br class="desktop-break"> to stay <span>close.</span></h1>
+      <p class="intro-copy">Thoughtful conversations, calmer workdays. Explore the ChatApp interface and move through its key screens.</p>
+      <div class="intro-actions"><a class="button button-primary" href="#prototype">Explore the prototype <span aria-hidden="true">↓</span></a><a class="text-link" href="#screens">Browse all screens <span aria-hidden="true">↗</span></a></div>
+      <div class="intro-meta"><div class="avatar-stack" aria-hidden="true"><span>DM</span><span>PS</span><span>SC</span><span>+2</span></div><span>One workspace. Everyone in sync.</span></div>
+    </section>
 
-        <section class="features-grid">
-            <div class="feature-card">
-                <h3>Workspace Navigation</h3>
-                <p>Clear structural separation of direct messages, team channels, and pinned projects.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Distraction-Free</h3>
-                <p>Prioritizes message hierarchy, clean typography, and intuitive thread replies.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Modern Design System</h3>
-                <p>Utilizes soft container radii, balanced spacing, and subtle interactive states.</p>
-            </div>
-        </section>
+    <section class="demo-wrap" id="prototype" aria-label="Interactive app screen browser">
+      <div class="demo-window">
+        <aside class="screen-rail" aria-label="Prototype screens">
+          <div class="rail-heading"><div><span class="rail-kicker">THE PROTOTYPE</span><h2>Explore ChatApp</h2></div><span class="screen-count" id="screenCount">01 / 15</span></div>
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="screenSearch" type="search" placeholder="Find a screen" autocomplete="off" aria-label="Find a screen"></label>
+          <div id="screenList" class="screen-list"></div>
+          <div class="rail-note"><span class="note-icon" aria-hidden="true">✦</span><p><strong>Designed for focus</strong><br>Every screen keeps the next conversation within reach.</p></div>
+        </aside>
 
-        <footer>
-            Designed & Developed by Chiraag Mayur
-        </footer>
-    </div>
+        <div class="stage">
+          <div class="stage-toolbar"><div class="stage-label"><span class="live-dot"></span><span id="currentCategory">MESSAGES</span></div><div class="stage-controls"><button id="prevScreen" class="icon-button" type="button" aria-label="Previous screen">←</button><button id="nextScreen" class="icon-button" type="button" aria-label="Next screen">→</button><button id="expandScreen" class="icon-button expand-button" type="button" aria-label="View screen full size">⤢</button></div></div>
+          <div class="device-stage">
+            <div class="device-glow" aria-hidden="true"></div>
+            <div class="phone"><div class="phone-screen"><img id="screenImage" src="assets/splash.png" alt="ChatApp splash screen"></div></div>
+            <span class="stage-caption">CHATAPP MOBILE · <span id="stageIndex">01</span></span>
+          </div>
+          <div class="screen-summary"><div><span class="summary-kicker" id="screenEyebrow">GETTING STARTED</span><h3 id="screenTitle">Splash screen</h3><p id="screenDescription">A warm, welcoming introduction to the ChatApp workspace.</p></div><span class="screen-badge">Mobile app</span></div>
+        </div>
+
+        <aside class="detail-rail" aria-label="About the prototype">
+          <div class="detail-top"><span class="detail-icon">✳</span><span class="detail-kicker">A SMALL LOOK INSIDE</span></div>
+          <h2>Made for the way teams <span>talk.</span></h2>
+          <p class="detail-copy">A connected set of screens for the everyday rhythm of work: quick check-ins, shared decisions, and everything in between.</p>
+          <div class="detail-divider"></div>
+          <div class="detail-points"><div><span class="point-icon point-blue">✦</span><div><strong>Conversations in context</strong><p>Channels and direct messages stay easy to find.</p></div></div><div><span class="point-icon point-violet">◷</span><div><strong>Less noise, more clarity</strong><p>Clean hierarchy keeps attention on the people.</p></div></div><div><span class="point-icon point-green">↗</span><div><strong>Work moves together</strong><p>Calls, files, and updates share one home.</p></div></div></div>
+          <a class="source-card" href="https://github.com/Uzumakimayurkun11/Chatapp_design" target="_blank" rel="noreferrer"><span class="source-mark">GH</span><span><strong>View project source</strong><small>Explore the design files</small></span><span class="source-arrow">↗</span></a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="screen-gallery" id="screens">
+      <div class="section-heading"><div><span class="eyebrow small-eyebrow">THE FULL EXPERIENCE</span><h2>Every part of the conversation.</h2></div><p>Choose a screen to preview it in the device.</p></div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <section class="closing"><span class="closing-spark">✳</span><div><span class="eyebrow small-eyebrow">CHATAPP · TEAM COMMUNICATION</span><h2>Good people.<br><span>Great products.</span></h2></div><a class="button button-dark" href="#prototype">Back to prototype <span aria-hidden="true">↑</span></a></section>
+  </main>
+  <footer class="footer"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>chat<span class="brand-accent">app</span></span></a><span>Designed by Chiraag Mayur</span><span>© 2026 ChatApp concept</span></footer>
+
+  <dialog id="screenDialog" class="screen-dialog" aria-label="Full-size screen preview"><button id="closeDialog" class="dialog-close" type="button" aria-label="Close preview">×</button><img id="dialogImage" alt=""></dialog>
 </body>
 </html>
