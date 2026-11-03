@@ -1,11 +1,11 @@
-# `team.` — Modern Team Communication Interface
+# ChatApp — Modern Team Communication Interface
 
 A sleek, minimalist team communication and chat application interface designed in Figma, focusing on streamlined workspace navigation and a distraction-free messaging experience.
 
 ---
 
 ## 🚀 Overview
-`team.` is a UI/UX concept built to reduce cognitive overload during daily team interactions. It combines structured sidebar navigation with a high-contrast, readable chat canvas to optimize productivity for remote and hybrid teams.
+ChatApp is a UI/UX concept built to reduce cognitive overload during daily team interactions. It combines structured sidebar navigation with a high-contrast, readable chat canvas to optimize productivity for remote and hybrid teams.
 
 ## ✨ Key Features
 * **Streamlined Workspace Navigation:** Clear separation of direct messages, team channels, and pinned projects.
